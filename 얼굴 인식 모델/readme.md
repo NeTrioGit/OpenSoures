@@ -51,8 +51,7 @@
 
 <img src="https://user-images.githubusercontent.com/112689981/233851264-d29d29d5-3567-4824-be1c-16029f1bfa0e.jpg" width="300" height="400"/>
 
-<img src="https://user-images.githubusercontent.com/112689981/233851257-cf01e193-a0d0-4df9-87a3-1ef29917858b.png" width="2000" height="400"/>
-
+<img width="2017" alt="스크린샷 2023-04-24 오전 1 11 48" src="https://user-images.githubusercontent.com/112689981/233851556-655e5f6c-402a-45e1-b79b-d054384f241e.png">
 
 #### img4
 
