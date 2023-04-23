@@ -33,3 +33,20 @@
 언어 제한: DeepFace 라이브러리는 파이썬을 비롯한 몇 가지 언어에서만 사용할 수 있습니다. 이러한 이유로, 다른 언어를 사용하는 사용자들은 다른 라이브러리를 찾아야 할 수 있습니다.
 
 ## 4. 실행 결과
+
+### Test1
+
+img1 과 img2 
+![img1](https://user-images.githubusercontent.com/112689981/233839372-5a2fbbde-0928-4947-ab4b-1a56dcc973f1.jpg)![img2](https://user-images.githubusercontent.com/112689981/233839380-201070f6-add2-4714-967e-372b69762090.jpg)
+<img width="192" alt="스크린샷 2023-04-23 오후 9 15 01" src="https://user-images.githubusercontent.com/112689981/233839391-fdbd6487-8f1b-47c0-8f93-306850a2903a.png">
+img1 과 img3
+![img1](https://user-images.githubusercontent.com/112689981/233839425-35b2890a-6174-4f1b-a835-25ff9fbd7ebf.jpg)![img3](https://user-images.githubusercontent.com/112689981/233839428-e285be80-4b61-4a5e-86dc-b4b7be624160.jpg)
+<img width="200" alt="스크린샷 2023-04-23 오후 9 11 46" src="https://user-images.githubusercontent.com/112689981/233839431-4685d4df-4563-48b8-a1f1-5af6f3f75eb9.png">
+
+
+## 5.어려웠던 점
+ 1) window환경이 아니라 mac m1환경에서 작업했기 때문에 Miniconda를 실치해서 파이썬 가상환경을 만들어야 했던 점에서 어려움이 있었다.
+  추가로 miniconda를 활용하기 전에 ANACONDA3 와 Miniforge를 활용해서 파이썬 가상환경을 만들어 실행 하려 했지만 여전이 원인을 찾지 못했지만 지속전인 오류가 발생해서 3번째의 가상환경을 만들어서야 성공했다.
+  
+ 2) 가상환경에서 tensorflow와 OpenCV, Deepface를 설치했음에도 바로 정상적으로 실행되지 않았고, 원인으로 openCV 공식 홈페이지에서 실행하는데 필요한 추가 파일을 다운받아 직접 특정 위치에 추가하는 과정을 가졌어야 했던 부분에서 어려움을 가졌다.
+
