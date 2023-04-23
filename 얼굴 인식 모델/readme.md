@@ -39,13 +39,21 @@
 
 <img src="https://user-images.githubusercontent.com/112689981/233839372-5a2fbbde-0928-4947-ab4b-1a56dcc973f1.jpg" width="300" height="400"/><img src="https://user-images.githubusercontent.com/112689981/233839380-201070f6-add2-4714-967e-372b69762090.jpg" width="300" height="400"/>
 
-<img width="192" alt="스크린샷 2023-04-23 오후 9 15 01" src="https://user-images.githubusercontent.com/112689981/233839391-fdbd6487-8f1b-47c0-8f93-306850a2903a.png">
+<img width="200" alt="스크린샷 2023-04-23 오후 9 11 46" src="https://user-images.githubusercontent.com/112689981/233839431-4685d4df-4563-48b8-a1f1-5af6f3f75eb9.png">
+
 #### img1 과 img3
 
 <img src="https://user-images.githubusercontent.com/112689981/233839425-35b2890a-6174-4f1b-a835-25ff9fbd7ebf.jpg" width="300" height="400"/><img src="https://user-images.githubusercontent.com/112689981/233839428-e285be80-4b61-4a5e-86dc-b4b7be624160.jpg" width="300" height="400"/>
 
-<img width="200" alt="스크린샷 2023-04-23 오후 9 11 46" src="https://user-images.githubusercontent.com/112689981/233839431-4685d4df-4563-48b8-a1f1-5af6f3f75eb9.png">
+<img width="192" alt="스크린샷 2023-04-23 오후 9 15 01" src="https://user-images.githubusercontent.com/112689981/233839391-fdbd6487-8f1b-47c0-8f93-306850a2903a.png">
 
+### Test2
+
+<img src="https://user-images.githubusercontent.com/112689981/233851264-d29d29d5-3567-4824-be1c-16029f1bfa0e.jpg" width="300" height="400"/>
+
+<img width="1411" alt="스크린샷 2023-04-24 오전 1 11 48" src="https://user-images.githubusercontent.com/112689981/233851257-cf01e193-a0d0-4df9-87a3-1ef29917858b.png">
+
+#### img4
 
 ## 5.어려웠던 점
  1) window환경이 아니라 mac m1환경에서 작업했기 때문에 Miniconda를 실치해서 파이썬 가상환경을 만들어야 했던 점에서 어려움이 있었다.
