@@ -36,12 +36,14 @@
 
 ### Test1
 
-img1 과 img2
-<img src="https://user-images.githubusercontent.com/112689981/233839372-5a2fbbde-0928-4947-ab4b-1a56dcc973f1.jpg" width="200" height="400"/><img src="https://user-images.githubusercontent.com/112689981/233839380-201070f6-add2-4714-967e-372b69762090.jpg" width="200" height="400"/>
+####img1 과 img2
+
+<img src="https://user-images.githubusercontent.com/112689981/233839372-5a2fbbde-0928-4947-ab4b-1a56dcc973f1.jpg" width="400" height="400"/><img src="https://user-images.githubusercontent.com/112689981/233839380-201070f6-add2-4714-967e-372b69762090.jpg" width="200" height="400"/>
 
 <img width="192" alt="스크린샷 2023-04-23 오후 9 15 01" src="https://user-images.githubusercontent.com/112689981/233839391-fdbd6487-8f1b-47c0-8f93-306850a2903a.png">
-img1 과 img3
-<img src="https://user-images.githubusercontent.com/112689981/233839425-35b2890a-6174-4f1b-a835-25ff9fbd7ebf.jpg" width="200" height="400"/><img src="https://user-images.githubusercontent.com/112689981/233839428-e285be80-4b61-4a5e-86dc-b4b7be624160.jpg" width="200" height="400"/>
+####img1 과 img3
+
+<img src="https://user-images.githubusercontent.com/112689981/233839425-35b2890a-6174-4f1b-a835-25ff9fbd7ebf.jpg" width="400" height="400"/><img src="https://user-images.githubusercontent.com/112689981/233839428-e285be80-4b61-4a5e-86dc-b4b7be624160.jpg" width="200" height="400"/>
 
 <img width="200" alt="스크린샷 2023-04-23 오후 9 11 46" src="https://user-images.githubusercontent.com/112689981/233839431-4685d4df-4563-48b8-a1f1-5af6f3f75eb9.png">
 
