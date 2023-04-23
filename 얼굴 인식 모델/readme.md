@@ -12,6 +12,7 @@
 5)	Facial Attribute Analysis: 입력된 얼굴 이미지에서 다양한 얼굴 속성을 분석합니다. 예를 들어, 안경 착용 여부, 수염 유무 등을 인식할 수 있습니다.
 6)	Face Alignment: 얼굴 이미지에서 얼굴을 찾아 정렬합니다.
 7)	Face Detection: 입력된 이미지에서 얼굴을 찾아냅니다.
+
 그리고 이 라이브러리는 다양한 딥러닝 모델을 지원한다. 예를 들어 VGG-Face, Google FaceNet, OpenFace, 마지막으로 페이스북의 deepface 모델을 예로 들 수 있다.
 ## 3.	장단점 분석
 장점:
