@@ -2,7 +2,7 @@
 
 // PIZZA 데이터베이스와 PIE 테이블을 만드는 코드입니다.
 
-CREATE DATABASE PIZZA;
+₩₩₩CREATE DATABASE PIZZA;
 
 USE PIZZA;
 
@@ -23,3 +23,4 @@ CREATE TABLE pie (
   source5 VARCHAR(255) NOT NULL,
   source5_i FLOAT(11) NOT NULL
 );
+₩₩₩
