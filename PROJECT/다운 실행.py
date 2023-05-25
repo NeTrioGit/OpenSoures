@@ -10,7 +10,7 @@ dataset = foz.load_zoo_dataset(
     split="train",
     classes=target_classes
 )
-
+# split="train" 아니면 split="validation"
 # GUI에서 시각화
 session = fo.launch_app(dataset)
 
