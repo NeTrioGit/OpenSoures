@@ -1,61 +1,37 @@
-import fiftyone as fo
-import fiftyone.zoo as foz
+import json
+import os
+
+with open("/Users/neo/fiftyone/coco-2017/train/labels.json") as f:
+    data = json.load(f)
+
+output_dir = "/Users/neo/fiftyone/coco-2017/new/train"
+os.makedirs(output_dir, exist_ok=True)
 
 target_classes = ["bicycle", "motorcycle", "bus", "truck", "car"]
 
-# Load COCO train dataset (coco-2017에 맞게 수정 필요)
-data_coco_train = foz.load_zoo_dataset("coco-2017", split="train", classes=target_classes)
+# Filter categories
+new_categories = [category for category in data["categories"] if category["name"] in target_classes]
+category_id_map = {category["id"]: i for i, category in enumerate(new_categories)}
 
-def filter_detections(sample):
-    filtered_detections = []
-    for detection in sample.ground_truth.detections:
-        if detection.label in target_classes:
-            filtered_detections.append(detection)
-    return fo.Detections(detections=filtered_detections)
+# Filter annotations
+new_annotations = [ann for ann in data["annotations"] if ann["category_id"] in category_id_map]
 
-data_coco_train.map_labels("ground_truth", filter_detections)
-###########
-data_coco_train = foz.load_zoo_dataset("coco-2017", split="train", classes=target_classes)
+# Update category_id in annotations
+for ann in new_annotations:
+    ann["category_id"] = category_id_map[ann["category_id"]]
 
-import fiftyone as fo
-import fiftyone.zoo as foz
+# Update category_id in categories
+for i, category in enumerate(new_categories):
+    category["id"] = i + 1
 
-target_classes = ["bicycle", "motorcycle", "bus", "truck", "car"]
+# Filter images with filtered annotations
+new_image_ids = list(set([ann["image_id"] for ann in new_annotations]))
+new_images = [img for img in data["images"] if img["id"] in new_image_ids]
 
-# Load COCO train dataset with the target classes
-data_coco_train = foz.load_zoo_dataset("coco-2017", split="train", classes=target_classes)
+data["annotations"] = new_annotations
+data["images"] = new_images
+data["categories"] = new_categories
 
-# Launch the FiftyOne App to visualize the filtered dataset
-session = fo.launch_app(data_coco_train)
-
-session.wait()
-
-#######
-# #
-# #--
-# --
-# --------_#############
-
-import fiftyone as fo
-import fiftyone.zoo as foz
-
-target_classes = ["bicycle", "motorcycle", "bus", "truck", "car"]
-
-# Load COCO train dataset
-data_coco_train = foz.load_zoo_dataset("coco-2017", split="train", download=False)
-
-def filter_detections(sample):
-    filtered_detections = []
-    for detection in sample.ground_truth.detections:
-        if detection.label in target_classes:
-            filtered_detections.append(detection)
-    sample.ground_truth.detections = filtered_detections
-    sample.save()
-
-# Apply the filtering function to the dataset
-data_coco_train.foreach(filter_detections)
-
-# Launch the FiftyOne App to visualize the filtered dataset
-session = fo.launch_app(data_coco_train)
-
-session.wait()
+# Save new JSON file
+with open(os.path.join(output_dir, "labels.json"), "w") as f:
+    json.dump(data, f)
