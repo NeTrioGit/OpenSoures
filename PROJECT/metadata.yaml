@@ -1,0 +1,17 @@
+description: Ultralytics best model trained on data.yaml
+author: Ultralytics
+license: AGPL-3.0 https://ultralytics.com/license
+version: 8.0.112
+stride: 32
+task: detect
+batch: 1
+imgsz:
+- 416
+- 416
+names:
+  0: bicycle
+  1: motorcycle
+  2: bus
+  3: truck
+  4: car
+  5: scooter
