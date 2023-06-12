@@ -13,14 +13,14 @@ while True:
     for box, id in zip(boxes, ids):
         cv2.rectangle(frame, (box[0], box[1]), (box[2], box[3]), (0, 255, 0), 2)
         cv2.putText(
-            frame,
-            f"Id {id}",
-            (box[0], box[1]),
-            cv2.FONT_HERSHEY_SIMPLEX,
-            1,
-            (0, 0, 255),
-            2,
-        )
+        frame,
+        f"Id {id}",
+        (box[0], box[1]),
+        cv2.FONT_HERSHEY_SIMPLEX,
+        1,
+        (0, 0, 255),
+        2,
+    )
     cv2.imshow("frame", frame)
     if cv2.waitKey(1) & 0xFF == ord("q"):
         break
